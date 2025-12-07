@@ -1,135 +1,763 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html class="scroll-smooth" lang="en"><head><style>.yNHHyP-marker-view .IPAZAH-content-container>*{pointer-events:none}.yNHHyP-marker-view .IPAZAH-content-container.HJDHPx-interactive>*{pointer-events:auto}
+</style>
 
-    <title>Nathani Engineering Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer></script>
-</head>
-<body>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nathani Consulting Services | Engineering & Digital Solutions</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "AIzaSyBB_SVKlC9CcEjDt1H01_B7Gjmb8FiIaGw",
+      v: "weekly",
+  });
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        /* Hide scrollbar for service modal content */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-inset-4{inset:-1rem}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-left-6{left:-1.5rem}.bottom-5{bottom:1.25rem}.bottom-6{bottom:1.5rem}.left-0{left:0px}.left-6{left:1.5rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0px}.top-4{top:1rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[70\]{z-index:70}.z-\[80\]{z-index:80}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.ml-4{margin-left:1rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-48{height:12rem}.h-56{height:14rem}.h-8{height:2rem}.h-\[400px\]{height:400px}.h-full{height:100%}.min-h-full{min-height:100%}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.translate-y-24{--tw-translate-y:6rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-4{--tw-translate-y:1rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-3{--tw-rotate:3deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-0{border-width:0px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-blue-700{--tw-border-opacity:1;border-color:rgb(29 78 216 / var(--tw-border-opacity, 1))}.border-green-500{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/50{border-color:rgb(51 65 85 / 0.5)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-900{--tw-bg-opacity:1;background-color:rgb(30 58 138 / var(--tw-bg-opacity, 1))}.bg-blue-900\/50{background-color:rgb(30 58 138 / 0.5)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/70{background-color:rgb(15 23 42 / 0.7)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-blue-400{--tw-gradient-from:#60a5fa var(--tw-gradient-from-position);--tw-gradient-to:rgb(96 165 250 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-900\/95{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(15 23 42 / 0.95) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-cyan-300{--tw-gradient-to:#67e8f9 var(--tw-gradient-to-position)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.to-slate-900\/70{--tw-gradient-to:rgb(15 23 42 / 0.7) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-20{padding-bottom:5rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pr-8{padding-right:2rem}.pt-2{padding-top:0.5rem}.pt-32{padding-top:8rem}.pt-5{padding-top:1.25rem}.pt-52{padding-top:13rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-6{line-height:1.5rem}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wide{letter-spacing:0.025em}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-20{opacity:0.2}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-600\/30{--tw-shadow-color:rgb(37 99 235 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-inset{--tw-ring-inset:inset}.ring-slate-300{--tw-ring-opacity:1;--tw-ring-color:rgb(203 213 225 / var(--tw-ring-opacity, 1))}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-lg{--tw-blur:blur(16px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.selection\:bg-blue-600 *::selection{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-blue-600::selection{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder\:text-slate-400::placeholder{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:rotate-0:hover{--tw-rotate:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-800:hover{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/5:hover{background-color:rgb(255 255 255 / 0.05)}.hover\:text-blue-900:hover{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.hover\:text-slate-500:hover{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-inset:focus{--tw-ring-inset:inset}.focus\:ring-blue-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(37 99 235 / var(--tw-ring-opacity, 1))}.focus-visible\:outline:focus-visible{outline-style:solid}.focus-visible\:outline-2:focus-visible{outline-width:2px}.focus-visible\:outline-offset-2:focus-visible{outline-offset:2px}.focus-visible\:outline-blue-600:focus-visible{outline-color:#2563eb}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-\[1\.01\]{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.group:hover .group-hover\:animate-bounce{animation:bounce 1s infinite}.group:hover .group-hover\:bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-50{opacity:0.5}@media (min-width: 640px){.sm\:my-8{margin-top:2rem;margin-bottom:2rem}.sm\:mt-6{margin-top:1.5rem}.sm\:block{display:block}.sm\:flex{display:flex}.sm\:w-auto{width:auto}.sm\:w-full{width:100%}.sm\:max-w-2xl{max-width:42rem}.sm\:max-w-lg{max-width:32rem}.sm\:translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:flex-row{flex-direction:row}.sm\:items-start{align-items:flex-start}.sm\:p-0{padding:0px}.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:pb-4{padding-bottom:1rem}.sm\:pb-8{padding-bottom:2rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:leading-6{line-height:1.5rem}}@media (min-width: 768px){.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:justify-start{justify-content:flex-start}.md\:text-left{text-align:left}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:h-auto{height:auto}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pb-32{padding-bottom:8rem}.lg\:pt-48{padding-top:12rem}}</style><script src="https://maps.googleapis.com/maps/api/js?libraries=maps&key=AIzaSyBB_SVKlC9CcEjDt1H01_B7Gjmb8FiIaGw&v=weekly&callback=google.maps.__ib__"></script><link type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&icon_names=link" rel="stylesheet"><style id="dyn-img-link-styles-di-script">
+      .dyn-img-link-wrapper-di-script {
+        anchor-scope: all;
+        display: contents;
+        position: relative;
+        z-index: 1;
+      }
 
-    <header>
-        <div class="container">
-            <h1>Nathani Engineering Services</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#mission">Mission & Vision</a></li>
-                    <li><a href="#clients">Major Clients</a></li>
-                    <li><a href="#products">Our Products</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      .dyn-img-link-wrapper-di-script img {
+        anchor-name: --photo;
+        display: block;
+        max-width: 100%;
+      }
 
-    <section id="about" class="section bg-light">
-        <div class="container">
-            <div class="section-content">
-                <h2>About Us</h2>
-                <p>Led by Mrs. Kalyani Nathani, we're your go-to for precision mechanical design and fabrication. Our experienced team blends industry knowledge with advanced technology, delivering efficient, customized solutions that elevate your business.</p>
-                <p>We believe in the power of collaboration, working closely with you to understand your unique needs and goals. By combining cutting-edge technology with a customer-centric approach, we ensure your projects are completed on time, within budget, and to the highest quality standards.</p>
-            </div>
-        </div>
-    </section>
+      .dyn-img-link-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+        position: absolute;
 
-    <section id="mission" class="section">
-        <div class="container">
-            <div class="section-content">
-                <h2>Mission & Vision</h2>
-                <p>Our mission is to empower businesses through exceptional mechanical engineering solutions. We aim to be a driving force in your success, providing expertise that fosters growth, continuity, and sustainability.</p>
-                <p>We envision a future where Nathani Engineering Services is recognized globally for its commitment to quality, innovation, and customer satisfaction. By leveraging advanced technologies and nurturing a culture of continuous improvement, we'll remain at the forefront of the industry, delivering solutions that shape a better tomorrow.</p>
-            </div>
-        </div>
-    </section>
+        bottom: anchor(bottom);
+        left: anchor(left);
+        margin-left: 10px;
+        margin-bottom: 10px;
 
-    <section id="clients" class="section bg-light">
-        <div class="container">
-            <h2>Major Clients</h2>
-            <ul>
-                <li>Matrix Tools & Metaplast Pvt. Ltd., Pune</li>
-                <li>Universal CNC Techniques, Hyderabad</li>
-                <li>Annyarobotics and Automation Pvt. Ltd., Coimbatore</li>
-                <li>Unique CNC Technology, Hyderabad</li>
-                <li>SP Technologies, Bangalore</li>
-                <li>Om Gayithri Engineering, Bangalore</li>
-                <li>Mani4Designs, Bangalore</li>
-            </ul>
-        </div>
-    </section>
+        transition: background-color 0.2s ease-in-out;
+      }
 
-    <section id="products" class="section">
-        <div class="container">
-            <h2>Our Products & Services</h2>
-            
-            <!-- Precision Fixtures & Jigs Section -->
-            <div id="fixtures-jigs" class="product-slide">
-                <div class="product">
-                    <img src="images/image1.jpg" alt="Precision Fixtures & Jigs">
-                    <img src="images/image2.jpg" alt="Precision Fixtures & Jigs">
-                    <img src="images/image3.jpg" alt="Precision Fixtures & Jigs">
-                    <img src="images/image4.jpg" alt="Precision Fixtures & Jigs">
-                    <img src="images/image5.jpg" alt="Precision Fixtures & Jigs">
-                    <img src="images/image6.jpg" alt="Precision Fixtures & Jigs">
-                    <h3>Precision Fixtures & Jigs</h3>
-                    <p>Custom-engineered solutions for precise workholding and assembly.</p>
+      .dyn-img-link-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dyn-img-link-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+
+      .dyn-img-attribution-button-di-script {
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        color: white;
+        width: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        height: clamp(13px, calc(max(anchor-size(width), anchor-size(height)) * 0.3), 21px);
+        padding: 4px;
+
+        position: absolute;
+        position-anchor: --photo;
+        top: anchor(top);
+        right: anchor(right);
+        margin-top: 10px;
+        margin-right: 10px;
+
+        transition: background-color 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dyn-img-attribution-button-di-script:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dyn-img-attribution-button-di-script span {
+        font-size: 14px;
+        vertical-align: top;
+      }
+
+      .dyn-img-inline-attribution-di-script {
+        z-index: 999999;
+        font-size: 12px;
+        padding: 4px;
+        display: none;
+
+        position: absolute;
+        position-anchor: --photo;
+        bottom: anchor(bottom);
+        right: anchor(right);
+        margin-bottom: 8px;
+        margin-right: 8px;
+
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+
+        white-space: nowrap;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 9999px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+    </style><script src="https://maps.googleapis.com/maps-api-v3/api/js/63/4a/main.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/4a/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/4a/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/4a/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/4a/marker.js"></script></head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+<nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200" id="navbar">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center space-x-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+<div class="w-10 h-10 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-xl tracking-tighter shadow-lg">
+                    NCS
                 </div>
-                <a class="prev" onclick="plusSlides(-1, 'fixtures-jigs')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'fixtures-jigs')">&#10095;</a>
-            </div>
-        
-            <!-- Mold Design & Manufacturing Section -->
-            <div id="mold-design" class="product-slide">
-                <div class="product">
-                    <img src="images/image7.jpg" alt="Mold Design & Manufacturing">
-                    <img src="images/image8.jpg" alt="Mold Design & Manufacturing">
-                    <img src="images/image9.jpg" alt="Mold Design & Manufacturing">
-                    <h3>Mold Design & Manufacturing</h3>
-                    <p>Expertly crafted mold cores and cavities for your production needs.</p>
+<span class="font-bold text-xl text-blue-900 hidden sm:block tracking-tight">Nathani Consulting Services</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-slate-600 hover:text-blue-900 transition-colors" href="#home">Home</a>
+<a class="text-sm font-medium text-slate-600 hover:text-blue-900 transition-colors" href="#about">About</a>
+<a class="text-sm font-medium text-slate-600 hover:text-blue-900 transition-colors" href="#services">Services</a>
+<a class="px-5 py-2.5 bg-blue-900 text-white text-sm font-medium rounded-full hover:bg-blue-800 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5" href="#contact">Contact Us</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-slate-600 hover:text-blue-900 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl" id="mobile-menu">
+<div class="px-4 pt-2 pb-6 space-y-1">
+<a class="block px-3 py-3 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-900 rounded-md" href="#home">Home</a>
+<a class="block px-3 py-3 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-900 rounded-md" href="#about">About</a>
+<a class="block px-3 py-3 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-900 rounded-md" href="#services">Services</a>
+<a class="block px-3 py-3 text-base font-medium text-blue-600 font-semibold hover:bg-blue-50 rounded-md" href="#contact">Contact Us</a>
+</div>
+</div>
+</nav>
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900" id="home">
+<div class="absolute inset-0 z-0">
+<img alt="Engineering Background" class="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/gg-dl/ABS2GSm8m0JqbvXWY6SoNd_JiGvBqMvLAAGt5Z6cDenY_MQeMBzIRnCe0bc_4fTRQ6yWXDi2riS0H1dR5LG_OFy_pBOuRxC_depCqqNm3YWOBe5KRU7Ahdq31dtbOE4g72Wh6lYmVbZc099qsm0vUB1I9GOg07I7S31XVEcysOsFVsBQtTQu" go-data-src="/gen?prompt=futuristic+blue+and+white+engineering+abstract+background+with+geometric+lines&aspect=16:9">
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 animate-fade-in-up">
+<div class="inline-flex items-center px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-sm text-blue-300 text-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-blue-400 mr-2 animate-pulse"></span>
+                    Innovative Engineering Solutions
                 </div>
-                <a class="prev" onclick="plusSlides(-1, 'mold-design')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'mold-design')">&#10095;</a>
-            </div>
-        
-            <!-- Custom Plastic Components Section -->
-            <div id="plastic-components" class="product-slide">
-                <div class="product">
-                    <img src="images/image10.jpg" alt="Custom Plastic Components">
-                    <img src="images/image11.jpg" alt="Custom Plastic Components">
-                    <img src="images/image12.jpg" alt="Custom Plastic Components">
-                    <img src="images/image13.jpg" alt="Custom Plastic Components">
-                    <h3>Custom Plastic Components</h3>
-                    <p>High-quality, durable plastic parts tailored to your specifications.</p>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 'plastic-components')">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'plastic-components')">&#10095;</a>
-            </div>
-        
-        </div>
-    </section>
-    
-    
-    <section id="contact" class="section bg-light-blue">
-        <div class="container">
-            <div class="section-content">
-                <h2>Contact Us</h2>
-                <p>
-                    <strong>Email:</strong> <a href="mailto:nathaniengineeringservices@gmail.com">nathaniengineeringservices@gmail.com</a><br>
-                    <strong>Phone:</strong> +91 6362388323<br>
-                    <strong>Address:</strong> Site No:23, Unnathi Residentials Main Road, Maragondanahalli-V, Bidarahalli Hobli, Bangalore-560036
+<h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Transforming Ideas into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Digital Reality</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+                    Nathani Consulting Services (NCS) delivers cutting-edge CAD/CAM, product design, and digital solutions to propel your business forward.
                 </p>
-            </div>
-        </div>
-    </section>
-    
-    <footer >
-        <!-- <div class="container"> -->
-            <p>&copy; 2023 Nathani Engineering Services. All rights reserved.</p>
-        <!-- </div> -->
-    </footer>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2" onclick="openQuoteModal()">
+<span>Get Started</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<a class="px-8 py-4 bg-transparent border border-slate-600 text-white rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center justify-center" href="#services">
+                        Explore Services
+                    </a>
+</div>
+</div>
+<div class="hidden md:block relative animate-fade-in-up" style="animation-delay: 0.2s;">
+<div class="relative w-full aspect-square max-w-md mx-auto">
+<div class="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+<img alt="Innovation" class="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl border border-slate-700/50 transform rotate-3 hover:rotate-0 transition-transform duration-700" src="2.png">
+<div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-4 z-20 animate-bounce" style="animation-duration: 3s;">
+<div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-semibold uppercase">Expertise in</p>
+<p class="text-sm font-bold text-slate-900">CAD/CAM & Design</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl opacity-30 group-hover:opacity-50 blur-lg transition duration-500"></div>
+<img alt="Our Team" class="relative rounded-lg shadow-2xl w-full object-cover transform transition duration-500 group-hover:scale-[1.01]" src="3.png">
+</div>
+<div>
+<h2 class="text-3xl font-bold text-slate-900 mb-6">About NCS</h2>
+<h3 class="text-xl text-blue-600 font-semibold mb-6">Precision. Innovation. Excellence.</h3>
+<p class="text-slate-600 mb-6 leading-relaxed">
+                    Nathani Consulting Services (NCS) is a premier engineering and digital consultancy firm based in Bangalore. We specialize in bridging the gap between conceptual design and manufacturing reality.
+                </p>
+<p class="text-slate-600 mb-8 leading-relaxed">
+                    From complex CAD/CAM/CAE projects to full-stack app development and corporate training, our multidisciplinary team is dedicated to providing robust solutions tailored to your unique industrial needs.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+<span class="material-symbols-outlined text-3xl text-blue-600 mb-2">psychology</span>
+<h4 class="font-bold text-slate-900">Expert Consulting</h4>
+<p class="text-sm text-slate-500">Tailored strategies for engineering challenges.</p>
+</div>
+<div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+<span class="material-symbols-outlined text-3xl text-blue-600 mb-2">school</span>
+<h4 class="font-bold text-slate-900">Training</h4>
+<p class="text-sm text-slate-500">Placement services & skill development.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-50 relative hero-pattern" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-3">What We Do</h2>
+<h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Comprehensive Engineering Services</h3>
+<p class="text-slate-600 text-lg">End-to-end solutions for product development, digital transformation, and manufacturing support.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(0)">
+<div class="h-56 overflow-hidden">
+<img alt="CAD/CAM" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="4.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">CAD / CAM / CAE</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">Advanced computer-aided design, manufacturing, and engineering analysis for precise industrial applications.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(1)">
+<div class="h-56 overflow-hidden">
+<img alt="Product Design" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="5.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">design_services</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Product Design</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">From concept sketches to functional prototypes, we design tools and products that meet market demands.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(2)">
+<div class="h-56 overflow-hidden">
+<img alt="3D Printing" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="6.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">print</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">3D Print & Prototype</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">Rapid prototyping and manufacturing support using state-of-the-art 3D printing technology.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(3)">
+<div class="h-56 overflow-hidden">
+<img alt="Apps & Web" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="7.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">code</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Apps & Website Building</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">Custom software solutions, responsive websites, and mobile applications to digitize your business.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(4)">
+<div class="h-56 overflow-hidden">
+<img alt="Consulting" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="8.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Consulting Services</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">Expert guidance on digital services, manufacturing processes, and engineering resource management.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-slate-100 flex flex-col h-full" onclick="openServiceModal(5)">
+<div class="h-56 overflow-hidden">
+<img alt="Training" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" src="9.png">
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">Trainings & Placement</h4>
+<p class="text-slate-600 text-sm mb-4 line-clamp-3">Industry-ready training programs and placement services to bridge the talent gap.</p>
+<div class="mt-auto flex items-center text-blue-600 font-medium text-sm">
+                        Learn More <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-900 text-white relative" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div>
+<h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+<p class="text-slate-400">Ready to start your project? Contact us for a consultation or quote.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center flex-shrink-0 mt-1 border border-blue-700">
+<span class="material-symbols-outlined text-blue-400">location_on</span>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-semibold text-white">Visit Us</h4>
+<p class="text-slate-300 mt-1">
+                                NCS #23, Unnathi Residentials,<br>
+                                Maragondanahalli, Bangalore-560036
+                            </p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center flex-shrink-0 mt-1 border border-blue-700">
+<span class="material-symbols-outlined text-blue-400">call</span>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-semibold text-white">Call Us</h4>
+<p class="text-slate-300 mt-1 font-mono">
+                                +91 6362388323 <br>
+                                +91 9731733433
+                            </p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-blue-900/50 flex items-center justify-center flex-shrink-0 mt-1 border border-blue-700">
+<span class="material-symbols-outlined text-blue-400">mail</span>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-semibold text-white">Email Us</h4>
+<p class="text-slate-300 mt-1">
+                                nathaniconsultingservicesncs@gmail.com
+                            </p>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<button class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition-all shadow-lg flex items-center justify-center gap-2" onclick="openQuoteModal()">
+<span class="material-symbols-outlined">send</span>
+                        Send Message
+                    </button>
+</div>
+</div>
+<div class="h-[400px] lg:h-auto w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-700 relative">
+<div class="w-full h-full bg-slate-800" id="map"><div style="height: 100%; width: 100%;"><div style="overflow: hidden; width: 582px; height: 490px;"><img alt="" src="https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i3002047&2i1943682&2e1&3u14&4m2&1u582&2u490&5m5&1e0&5sen-US&6sus&10b1&12b1&7sNCS_MAP_ID&8e1&key=AIzaSyBB_SVKlC9CcEjDt1H01_B7Gjmb8FiIaGw&token=88139" style="width: 582px; height: 490px;"></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-sm tracking-tighter">NCS</div>
+<span class="font-bold text-white tracking-tight">Nathani Consulting Services</span>
+</div>
+<p class="text-sm">© 2024 Nathani Consulting Services. All rights reserved.</p>
+</div>
+</footer>
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-[60] hidden" id="serviceModal" role="dialog">
+<div class="absolute inset-0 bg-slate-900/70 backdrop-blur-sm transition-opacity opacity-0" id="serviceModalBackdrop"></div>
+<div class="fixed inset-0 z-10 overflow-y-auto">
+<div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+<div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" id="serviceModalPanel">
+<div class="relative">
+<div class="absolute top-0 left-0 w-full h-48">
+<img alt="Service" class="w-full h-full object-cover" id="modalImage" src="">
+<div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+</div>
+<button class="absolute top-4 right-4 rounded-full bg-white/90 p-2 text-slate-400 hover:text-slate-500 focus:outline-none shadow-sm z-20" onclick="closeServiceModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="px-6 pb-6 pt-52 sm:px-8 sm:pb-8">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center" id="modalIconContainer">
+<span class="material-symbols-outlined text-2xl" id="modalIcon">settings</span>
+</div>
+<h3 class="text-2xl font-bold leading-6 text-slate-900" id="modalTitle">Service Title</h3>
+</div>
+<div class="mt-2">
+<p class="text-sm text-slate-500 mb-6" id="modalDescription">Description goes here.</p>
+<h4 class="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide">Key Features</h4>
+<ul class="space-y-3 mb-8" id="modalFeatures">
+</ul>
+<div class="mt-5 sm:mt-6">
+<button class="inline-flex w-full justify-center rounded-lg bg-blue-600 px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all" onclick="openQuoteModal(); closeServiceModal()" type="button">
+                                Request this Service
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-[70] hidden" id="quoteModal" role="dialog">
+<div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm transition-opacity opacity-0" id="quoteModalBackdrop"></div>
+<div class="fixed inset-0 z-10 overflow-y-auto">
+<div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+<div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" id="quoteModalPanel">
+<div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+<div class="sm:flex sm:items-start">
+<div class="w-full">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-bold leading-6 text-slate-900" id="modal-title">Get a Quote</h3>
+<button class="text-slate-400 hover:text-slate-500" onclick="closeQuoteModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="space-y-4" id="quoteForm" onsubmit="handleQuoteSubmit(event)">
+<div>
+<label class="block text-sm font-medium leading-6 text-slate-900" for="name">Full Name</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-0 py-2.5 px-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" id="name" name="name" placeholder="John Doe" required="" type="text">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-slate-900" for="email">Email Address</label>
+<div class="mt-1">
+<input class="block w-full rounded-md border-0 py-2.5 px-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" id="email" name="email" placeholder="john@example.com" required="" type="email">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-slate-900" for="service">Interested Service</label>
+<div class="mt-1">
+<select class="block w-full rounded-md border-0 py-2.5 px-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" id="service" name="service">
+<option>General Inquiry</option>
+<option>CAD / CAM / CAE</option>
+<option>Product Design</option>
+<option>3D Printing & Prototyping</option>
+<option>Apps & Website Building</option>
+<option>Consulting</option>
+<option>Training & Placement</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-slate-900" for="message">Project Details</label>
+<div class="mt-1">
+<textarea class="block w-full rounded-md border-0 py-2.5 px-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" id="message" name="message" placeholder="Tell us about your requirements..." rows="3"></textarea>
+</div>
+</div>
+<div class="mt-6">
+<button class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all" type="submit">
+                                        Submit Inquiry
+                                    </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-5 right-5 z-[80] transform transition-all duration-300 translate-y-24 opacity-0" id="toast">
+<div class="bg-white border-l-4 border-green-500 rounded shadow-2xl p-4 flex items-center pr-8">
+<span class="material-symbols-outlined text-green-500 mr-3">check_circle</span>
+<div>
+<h4 class="font-bold text-slate-800 text-sm">Request Sent!</h4>
+<p class="text-slate-500 text-xs">We will contact you shortly.</p>
+</div>
+</div>
+</div>
+<script>
+        const servicesData = [
+    {
+        title: "CAD / CAM / CAE",
+        icon: "architecture",
+        image: "4.png",
+        description: "We provide comprehensive Computer-Aided Design (CAD), Manufacturing (CAM), and Engineering (CAE) solutions. Our team uses advanced software to create precise 2D drafts, 3D models, and simulations to optimize your product development lifecycle.",
+        features: [
+            "3D Modeling & Rendering",
+            "Finite Element Analysis (FEA)",
+            "Manufacturing Simulation",
+            "Legacy Data Conversion"
+        ]
+    },
+    {
+        title: "Product Design",
+        icon: "design_services",
+        image: "5.png",
+        description: "Turn your concepts into market-ready products. Our product design services cover everything from initial ideation and sketching to ergonomic analysis and material selection, ensuring functionality and aesthetic appeal.",
+        features: [
+            "Concept Development",
+            "Industrial Design",
+            "Ergonomics & Aesthetics",
+            "Design for Manufacturing (DFM)"
+        ]
+    },
+    {
+        title: "3D Print & Prototype",
+        icon: "print",
+        image: "6.png",
+        description: "Accelerate your innovation with our rapid prototyping services. We utilize industrial-grade 3D printers to produce high-fidelity functional prototypes, allowing you to validate designs quickly before mass production.",
+        features: [
+            "Rapid Prototyping",
+            "Functional Testing Parts",
+            "Low-Volume Manufacturing",
+            "Multi-Material Printing"
+        ]
+    },
+    {
+        title: "Apps & Web Building",
+        icon: "code",
+        image: "7.png",
+        description: "In the digital age, a robust online presence is crucial. We build custom responsive websites and high-performance mobile applications tailored to your business goals, ensuring seamless user experiences across devices.",
+        features: [
+            "Responsive Websites",
+            "Full-Stack Applications",
+            "API Integration",
+            "Admin Dashboards & Analytics"
+        ]
+    },
+    {
+        title: "Consulting Services",
+        icon: "support_agent",
+        image: "8.png",
+        description: "Leverage our expertise in engineering and digital transformation. We help you identify bottlenecks, optimize workflows, and implement scalable solutions that align with your business objectives.",
+        features: [
+            "Engineering Process Consulting",
+            "Digital Transformation Roadmaps",
+            "Manufacturing & Production Support",
+            "Resource Planning & Optimization"
+        ]
+    },
+    {
+        title: "Trainings & Placement",
+        icon: "school",
+        image: "9.png",
+        description: "We conduct industry-focused training programs that make students and professionals job-ready, and we connect them with companies looking for skilled engineers and developers.",
+        features: [
+            "Customized Training Modules",
+            "Hands-on Project Work",
+            "Soft Skills & Interview Prep",
+            "Placement Assistance"
+        ]
+    }
+];
+
+
+        // Service Modal Logic
+        function openServiceModal(index) {
+            const service = servicesData[index];
+            const modal = document.getElementById('serviceModal');
+            const backdrop = document.getElementById('serviceModalBackdrop');
+            const panel = document.getElementById('serviceModalPanel');
+            
+            // Populate content
+            document.getElementById('modalTitle').textContent = service.title;
+            document.getElementById('modalIcon').textContent = service.icon;
+            document.getElementById('modalImage').src = service.image;
+            document.getElementById('modalDescription').textContent = service.description;
+            
+            const featuresList = document.getElementById('modalFeatures');
+            featuresList.innerHTML = '';
+            service.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.className = "flex items-center text-sm text-slate-600";
+                li.innerHTML = `<span class="material-symbols-outlined text-green-500 text-lg mr-2">check_circle</span>${feature}`;
+                featuresList.appendChild(li);
+            });
+
+            modal.classList.remove('hidden');
+            // Small timeout for transition
+            setTimeout(() => {
+                backdrop.classList.remove('opacity-0');
+                panel.classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+                panel.classList.add('opacity-100', 'translate-y-0', 'sm:scale-100');
+            }, 10);
+        }
+
+        function closeServiceModal() {
+            const modal = document.getElementById('serviceModal');
+            const backdrop = document.getElementById('serviceModalBackdrop');
+            const panel = document.getElementById('serviceModalPanel');
+
+            backdrop.classList.add('opacity-0');
+            panel.classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+            panel.classList.remove('opacity-100', 'translate-y-0', 'sm:scale-100');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Quote Modal Logic
+        function openQuoteModal() {
+            const modal = document.getElementById('quoteModal');
+            const backdrop = document.getElementById('quoteModalBackdrop');
+            const panel = document.getElementById('quoteModalPanel');
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                backdrop.classList.remove('opacity-0');
+                panel.classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+                panel.classList.add('opacity-100', 'translate-y-0', 'sm:scale-100');
+            }, 10);
+        }
+
+        function closeQuoteModal() {
+            const modal = document.getElementById('quoteModal');
+            const backdrop = document.getElementById('quoteModalBackdrop');
+            const panel = document.getElementById('quoteModalPanel');
+
+            backdrop.classList.add('opacity-0');
+            panel.classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+            panel.classList.remove('opacity-100', 'translate-y-0', 'sm:scale-100');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            closeQuoteModal();
+            // Show toast
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3000);
+            e.target.reset();
+        }
+
+        // Map Implementation
+        async function initMap() {
+            const { Map } = await google.maps.importLibrary("maps");
+            const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+
+            // Approximate coordinates for Maragondanahalli, Bangalore
+            const position = { lat: 13.0374, lng: 77.6927 };
+
+            const map = new Map(document.getElementById("map"), {
+                zoom: 14,
+                center: position,
+                mapId: 'NCS_MAP_ID',
+                disableDefaultUI: true,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry",
+                        "stylers": [{ "color": "#242f3e" }]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{ "lightness": -80 }]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{ "color": "#746855" }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{ "color": "#d59563" }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{ "color": "#17263c" }]
+                    }
+                ]
+            });
+
+            // Custom Marker Pin
+            const pinIcon = document.createElement("div");
+            pinIcon.className = "material-symbols-outlined text-white text-3xl";
+            pinIcon.textContent = "business";
+            
+            const pin = new PinElement({
+                glyph: pinIcon,
+                background: "#2563EB", // Blue-600
+                borderColor: "#1E40AF",
+                scale: 1.2,
+            });
+
+            const marker = new AdvancedMarkerElement({
+                map: map,
+                position: position,
+                content: pin.element,
+                title: "Nathani Consulting Services"
+            });
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+        initMap();
+    </script>
+
 
 </body>
-</html>
